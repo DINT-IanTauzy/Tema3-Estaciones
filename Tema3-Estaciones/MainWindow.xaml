@@ -5,15 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_Estaciones"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Las 4 estaciones" Height="450" Width="800" Icon="./Recursos/Sol.ico">
 
-    <Grid>
+    <Grid Background="LightBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
         
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" FontSize="20">Las 4 estaciones</TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" FontSize="35" FontWeight="Bold" FontFamily="Arial Black">
+            <TextBlock.Effect>
+                <DropShadowEffect Direction="373"/>
+            </TextBlock.Effect>
+            <TextBlock.Foreground>
+                <RadialGradientBrush GradientOrigin="0.5,0.5">
+                    <GradientStop Color="#FF485AAC" Offset="0"/>
+                    <GradientStop Color="#FF278B30" Offset="0.61"/>
+                </RadialGradientBrush>
+            </TextBlock.Foreground>Las 4 estaciones</TextBlock>
     
     <UniformGrid Rows="2" Columns="2" Grid.Row="1" Margin="5">
         <ScrollViewer Margin="10" HorizontalScrollBarVisibility="Auto">

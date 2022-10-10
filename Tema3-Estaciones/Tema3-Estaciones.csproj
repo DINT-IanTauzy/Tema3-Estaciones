@@ -100,5 +100,8 @@
     <Resource Include="Recursos\primavera.jpg" />
     <Resource Include="Recursos\verano.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\Sol.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
